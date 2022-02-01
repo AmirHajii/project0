@@ -13,11 +13,11 @@
       <body>
         <nav>
             <div class="nav-img">
-            <img src="./img/google.png" alt="google icon" height= "32px" width="103px">
+            <img src="./img/google.png" alt="google icon" height= "32px" width="103px" style="cursor: pointer;">
             </div>
             <div class="nav-1">
             <a href="./index.html" id="p11">Search</a>
-            <a href="advance.html" id="p12">Advance</a>
+            <a href="./img.html" id="p12">image</a>
             </div>
         </nav>
         <div id= "top">
@@ -27,27 +27,28 @@
                     <h5>Find pages with...</h5>
                     <h4>To do this in the search box.</h4>
         </div>
+        <form action="https://www.google.com/search">
             <div id="search">
                     <label id="atw">all these words:</label> 
-                    <input class="fpw-textinput" value="" autofocus="autofocus" id="atw-box" name="all these words text box" type="text";>
+                    <input class="fpw-textinput" value autofocus="autofocus" id="atw-box" name="as_q" type="text";>
                     <div class="atw-ttiw">Type the important words:<span class="trt"> tri-colour rat terrier </span>   </div> 
                     <br>
                     <label id="tewop">this exact words or phrase:</label> 
-                    <input class="tewop-textinput" value="" autofocus="autofocus" id="tewop-box" name="this exact words or phrase" type="text";>
+                    <input class="tewop-textinput" value="" autofocus="autofocus" id="tewop-box" name="as_epq" type="text";>
                     <div class="tewop-pewiq">Put exact words in quotes:  <span class="rt">"rat terrier"  </span>   </div> 
                     <br>
                     <label id="aotw">any of these words:</label> 
-                    <input class="aotw-textinput" value="" autofocus="autofocus" id="aotw-box" name="any of these words" type="text";>
+                    <input class="aotw-textinput" value="" autofocus="autofocus" id="aotw-box" name="as_oq" type="text";>
                     <div class="aotw-tobatwyw"> Type OR between all the words you want:<span class="mos"> miniature OR standard </span>   </div> 
                     <br>
                     <label id="notw">none of these words:</label> 
-                    <input class="notw-textinput" value="" autofocus="autofocus" id="notw-box" name="none of these words" type="text";>
+                    <input class="notw-textinput" value="" autofocus="autofocus" id="notw-box" name="as_eq" type="text";>
                     <div class="notw-pamsjbwtydw">Put a minus sign just before words that you don't want:<br> <span class="rjr">-rodent, -"Jack Russell"</span>   </div> 
                     <br>
                     <label id="nrf">numbers ranging from:</label> 
-                    <input class="nrf-textinput" value="" autofocus="autofocus" id="nrf-box" name="numbers ranging from" type="text";>
+                    <input class="nrf-textinput" value="" autofocus="autofocus" id="nrf-box" name="as_nlo" type="text";>
                     <div style="display:table-cell;width:40px;padding-right:6px;padding-left:6px;text-align:center;font-size:13px;color:#222">to</div>
-                    <input class="nrf-textinput2" value="" autofocus="autofocus" id="nrf-box2" name="numbers ranging from2" type="text";>
+                    <input class="nrf-textinput2" value="" autofocus="autofocus" id="nrf-box2" name="as_nhi" type="text";>
                    <div class="nrf-ptfsbtnaaauom"> Put two full stops between the numbers and add a unit of measurement: <br><span class="num1"> 10..35 kg, £300..£500, 2010..2011 </span> 
                     <br> 
                     <hr>
@@ -57,7 +58,7 @@
         </div>
             <div id="search_narrow">
                                     <label id="language">language:</label>  
-                                    <select data-placeholder="any language...">
+                                    <select data-placeholder="any language..." name="lr">
                                         <option value="AF">Afrikaans</option>
                                         <option value="SQ">Albanian</option>
                                         <option value="AR">Arabic</option>
@@ -134,7 +135,7 @@
                                     <div class="fpitltys">Find pages in the language that you select.  </div>
                                     <br>
                                     <label id="region">region:</label> 
-                                    <select id="country" name="country" class="form-control">
+                                    <select id="country" name="country" class="form-control" name="cr">
                                         <option value="Afghanistan">Afghanistan</option>
                                         <option value="Åland Islands">Åland Islands</option>
                                         <option value="Albania">Albania</option>
@@ -383,7 +384,7 @@
                                     <div class="fppiapr">Find pages published in a particular region. </div>
                                     <br>
                                     <label id="last_update">last update:</label> 
-                                    <select id="at" name="time" class="form-control">
+                                    <select id="at" name="as_qdr" class="form-control">
                                         <option value="Anytime">Anytime</option>
                                         <option value="last 24 hours">last 24 hours</option>
                                         <option value="upto a week ago">upto a week ago</option>
@@ -393,11 +394,11 @@
                                     <div class="fpuwtttys">Find pages updated within the time that you specify. </div>
                                     <br>
                                     <label id="sod">site or domain:</label> 
-                                    <input class="sod-textinput" value="" autofocus="autofocus" id="sod-box" name="this exact words or phrase" type="text";>
+                                    <input class="sod-textinput" value="" autofocus="autofocus" id="sod-box" name="as_sitesearch" type="text";>
                                     <div class="sod-sos">Search one site <label id="link1" style="font-family: monospace;">(like wikipedia.org)</style> </label>or limit your results to a domain like <br><span class="edu"><label id="link1" style="font-family: monospace;">.edu, .org or .gov</style> </label></span></div> 
                                     <br>
                                     <label id="terms_appearing">terms appearing:</label> 
-                                    <select id="tms" name="terms" class="form-control">
+                                    <select id="tms" name="as_occt" class="form-control">
                                         <option value="anywhere in the page">anywhere in the page</option>
                                         <option value="in the title of the page">in the title of the page</option>
                                         <option value="in the text of the page">in the txt of the page</option>
@@ -407,14 +408,14 @@
                                     <div class="sftitwp">Search for terms in the whole page, page title or web address, or links to <br>the page you're looking for. </div>
                                     <br>
                                     <a href="https://support.google.com/websearch/answer/510?p=adv_safesearch&hl=en-GB&visit_id=637329948790358199-2944202581&rd=1"id="SafeSearch"><label id="SafeSearch">SafeSearch:</label></a> 
-                                    <select id="ss" name="SafeSearch" class="form-control">
+                                    <select id="ss" name="safe" class="form-control">
                                         <option value="Show most relevant reesult">Show most relevant reesult</option>
                                         <option value="Filter explicit results">Filter explicit results</option>                                       
                                     </select>
                                     <div class="tswtfsec">Tell <a href="https://support.google.com/websearch/answer/510?p=adv_safesearch&hl=en-GB&visit_id=637329948790358199-2944202581&rd=1"id="ss2"><label id="ss2" style="color: blue;">SafeSearch </style></label></a>whether to filter sexually explicit content. </div>
                                     <br>
                                     <label id="file_type">file type:</label> 
-                                    <select id="ft" name="file type" class="form-control">
+                                    <select id="ft" name="as_filetype" class="form-control">
                                         <option value="any format">any format</option>
                                         <option value="Adobe Acrobat PDF (.pdf)">Adobe Acrobat PDF (.pdf)</option>
                                         <option value="Adobe Postscript (.ps)">Adobe Postscript (.ps)</option>
@@ -432,7 +433,7 @@
                                     <div class="fpitftyp">Find pages in the format that you prefer. </div>
                                     <br>
                                     <a href="https://support.google.com/websearch/answer/29508?p=ws_images_usagerights&hl=en-GB&visit_id=637329948790358199-2944202581&rd=1"id="usage_rights"><label id="usage_rights">usage rights:</label></a>
-                                    <select id="ur" name="usage rights" class="form-control">
+                                    <select id="ur" name="tbs" class="form-control">
                                         <option value="not fitted by licence">not fitted by licence</option>
                                         <option value="free to use or share">free to use or share</option>
                                         <option value="free to use or to share, even commercially">free to use or to share, even commercially</option>
@@ -444,9 +445,10 @@
                                     <br>
                      </div>
                 <div id="ads">
-                               <button>
-                                    <a href="https://www.google.co.uk/webhp?as_q=&as_epq=&as_oq=&as_eq=&as_nlo=&as_nhi=&lr=&cr=&as_qdr=all&as_sitesearch=&as_occt=any&safe=images&as_filetype=&tbs=" id="advance_search" style="color: #fff; text-decoration:none;"value="Advanced Search" type="submit">Advance Search </a>
+                               <button type="submit" id="advance_search" style="color: #fff; text-decoration:none;"value="Advanced Search">
+                                   Advance Search
                              </button>
+                            </form>
                              <br>
                              <br>
                              <br>
